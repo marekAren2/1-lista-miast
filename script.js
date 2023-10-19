@@ -1,28 +1,26 @@
 let cities = ['Warsaw', 'Berlin', 'Paris', 'London', 'New York', 'Tokio', 'Moscow'];
 
-
 // let orderList = document.createElement('ol');
 let orderList = document.querySelector("ol");
 
 if (!orderList ) {
-console.log('nie istnieje lista w HTML tworze...') 
+  console.log('nie istnieje lista w HTML tworze...');
   orderList = document.createElement('ol');
   orderList.className = 'cities';
 }
-// document.getE
 // console.log(orderList)
 
 for (let city of cities) {
   let listItem = document.createElement('li');
   // console.log(lista);
   listItem.className = 'city';
-    listItem.innerText = city;
+  listItem.innerText = city;
   // kod = kod + lista;
   // console.log(city);
   // console.log(lista);
   console.log(listItem);
   orderList.appendChild(listItem);
-    // console.log(orderList);
+  // console.log(orderList);
 }
 // console.log(orderList
 document.body.appendChild(orderList);
